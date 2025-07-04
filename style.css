@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wdth,wght@75..100,100..900&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.background-image {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(./imagens/bg-repeat.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    gap: 60px;
+}
+
+.conteudo-texto {
+    width: 300px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 10px;
+}
+
+.titulo-principal {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.subtitulo {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.texto {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.meu-formulario {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 340px;
+}
+
+.formulario {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.formulario:focus {
+    outline: none;
+    border-color: #3CCC87;
+}
+
+textarea.formulario {
+    height: 100px;
+}
+
+.texto-obrigatorio {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #3CCC87;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #2e9d6a;
+}
+
+.mensagem-erro {
+    color: #F52E2E;
+    font-size: 8px;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 7px;
+    visibility: hidden;
+}
+
+.formulario.preenchido {
+    border-color: #3CCC87;
+}
+
+.formulario.vazio {
+    border-color: #F52E2E;
+}
